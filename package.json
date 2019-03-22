@@ -1,0 +1,25 @@
+{
+  "name": "what-is-this",
+  "version": "1.0.0",
+  "description": "[![N|Solid](https://i.ibb.co/yVrZ51T/Arobs-logo-04-672x372-1.png)](https://www.arobs.com/) ### Installation This project requires [Node.js](https://nodejs.org/) and [NPM](https://www.npmjs.com/get-npm) to run.",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^8.0.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "András Fodor",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://andrasfodor94@bitbucket.org/andrasfodor94/what-is-this.git"
+  },
+  "homepage": "https://bitbucket.org/andrasfodor94/what-is-this#readme"
+}
