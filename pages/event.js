@@ -19,7 +19,7 @@ export default class Event extends React.Component {
         return <div>
             <h1>Event example</h1>
             <Navigation/>
-            Type your text: <input type="text" value={this.state.value} onChange={handleChange}/>
+            Type your text: <input type="text" value={this.state.value} onChange={handleChange.bind(this)}/>
         </div>
     }
 }

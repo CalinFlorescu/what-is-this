@@ -9,6 +9,9 @@ export default class Index extends React.Component {
         this.state = {
             counter: 0
         };
+
+        this.getCounterValue = this.getCounterValue.bind(this);
+
     }
 
     componentDidMount() {
@@ -24,7 +27,7 @@ export default class Index extends React.Component {
     /**
      * Increase counter
      */
-    inceaseCounter() {
+    inceaseCounter = () => {
         this.setState(prevState => ({ counter: prevState.counter + 1 }));
     }
 
@@ -44,9 +47,8 @@ export default class Index extends React.Component {
         return <div>
             <h1>Timer example</h1>
             <Navigation/>
-            counter = {this.state.counter} 
-             / 
-            <EvenOdd getCounterValue={this.getCounterValue} />
+            counter = {this.state.counter}
+            <EvenOdd getCounterValue={this.getCounterValue()} />
         </div>
     }
 }
