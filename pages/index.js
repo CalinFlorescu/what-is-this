@@ -35,6 +35,7 @@ export default class Index extends React.Component {
      * Get counter value from state
      */
     getCounterValue() {
+        console.log(this.state.counter);
         return this.state.counter;
     }
 
@@ -48,7 +49,7 @@ export default class Index extends React.Component {
             <h1>Timer example</h1>
             <Navigation/>
             counter = {this.state.counter}
-            <EvenOdd getCounterValue={this.getCounterValue()} />
+            <EvenOdd getCounterValue={this.getCounterValue} />
         </div>
     }
 }
